@@ -1,15 +1,9 @@
-import React, { useState, useEffect, useCallback, useMemo } from 'react';
+
 import { initializeApp } from 'firebase/app';
 import {
     getAuth, signInWithCustomToken, signInAnonymously, onAuthStateChanged,
     signOut
 } from 'firebase/auth';
-import {
-    getFirestore, collection, onSnapshot, doc, getDoc, addDoc, setDoc,
-    updateDoc, serverTimestamp, arrayUnion, query, where, orderBy, deleteDoc,
-    setLogLevel,
-    getDocs // Telah ditambahkan
-} from 'firebase/firestore';
 import { ChevronRight, ChevronDown, Coffee, Utensils, Zap, Clock, Leaf } from 'lucide-react';
 
 // --- CONFIGURATION & FIREBASE INITIALIZATION ---
@@ -1794,3 +1788,4 @@ const KasirView = ({ userName }) => {
 };
 
 export default App;
+
